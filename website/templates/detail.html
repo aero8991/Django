@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Learn about Painting{% endblock %}
+{% block meta_description %}Check out Performance Painting's latest blogs{% endblock %}
+
+{% block content %}
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 bg-hero" style="margin-bottom: 90px;">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="display-1 text-dark">Blog Detail</h1>
+                    <div class="pt-2">
+                        <a href="" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">Home</a>
+                        <a href="" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">Blog Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-6">
+        <div class="container py-5">
+            <div class="row g-3">
+                <div class="col-lg-8">
+                    <!-- Blog Detail Start -->
+                    <div class="mb-5">
+                        <img class="img-fluid w-100 mb-5" src="{% static 'website/img/blog-2.jpg' %}" alt="">
+                        <h1 class="mb-4">This is a blog post</h1>
+                        <p>Heres what Performance painting has been up to! </p>
+                    </div>
+                    <!-- Blog Detail End -->
+    
+                    <!-- Comment List Start -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">3 Comments</h3>
+                        <div class="d-flex mb-4">
+                            <img src="{% static 'website/img/user.jpg' %}" class="img-fluid" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6><a href="">John Doe</a> <small><i>12 Dec 2021</i></small></h6>
+                                <p>Wow these guys are amazing!</p>
+                                <button class="btn btn-sm btn-secondary rounded-pill px-3">Reply</button>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <img src="{% static 'website/img/user.jpg' %}" class="img-fluid" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6><a href="">John Doe</a> <small><i>12 Dec 2021</i></small></h6>
+                                <p>Dan is the best!</p>
+                                <button class="btn btn-sm btn-secondary rounded-pill px-3">Reply</button>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-5 mb-4">
+                            <img src="{% static 'website/img/user.jpg' %}" class="img-fluid" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6><a href="">John Doe</a> <small><i>12 Dec 2021</i></small></h6>
+                                <p>I've never seen such great work!</p>
+                                <button class="btn btn-sm btn-secondary rounded-pill px-3">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Comment List End -->
+    
+                    <!-- Comment Form Start -->
+                    <div class="bg-primary p-5">
+                        <h3 class="mb-4">Leave a comment</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control bg-white border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control bg-white border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control bg-white border-0" placeholder="Website" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-white border-0" rows="5" placeholder="Comment"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-secondary w-100 py-3" type="submit">Leave Your Comment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Comment Form End -->
+                </div>
+    
+                <!-- Sidebar Start -->
+                <div class="col-lg-4">
+                    <!-- Search Form Start -->
+                    <div class="mb-5">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Keyword">
+                            <button class="btn btn-primary px-4"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <!-- Search Form End -->
+    
+                    <!-- Category Start -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">Categories</h3>
+                        <div class="d-flex flex-column justify-content-start bg-primary p-4">
+                            <a class="h5 mb-4" href="#"><i class="fa fa-angle-right me-2"></i>Interior Painting</a>
+                            <a class="h5 mb-4" href="#"><i class="fa fa-angle-right me-2"></i>Exterior Painting</a>
+                            <a class="h5 mb-4" href="#"><i class="fa fa-angle-right me-2"></i>Prep work</a>
+                            <a class="h5 mb-4" href="#"><i class="fa fa-angle-right me-2"></i>Brushes</a>
+                            <a class="h5 mb-0" href="#"><i class="fa fa-angle-right me-2"></i>Paint</a>
+                        </div>
+                    </div>
+                    <!-- Category End -->
+    
+                    <!-- Recent Post Start -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">Recent Post</h3>
+                        <div class="bg-primary p-4">
+                            <div class="d-flex mb-3">
+                                <img class="img-fluid" src="{% static 'website/img/blog-1.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                                <a href="" class="h5 d-flex align-items-center bg-white px-3 mb-0"> paint bathrooms like a pro!
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img class="img-fluid" src="{% static 'website/img/blog-2.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                                <a href="" class="h5 d-flex align-items-center bg-white px-3 mb-0">Learn how to clean your brush properly
+                                </a>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img class="img-fluid" src="{% static 'website/img/blog-3.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                                <a href="" class="h5 d-flex align-items-center bg-white px-3 mb-0">Have you ever thought about using a sprayer?
+                                </a>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img class="img-fluid" src="{% static 'website/img/blog-1.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                                <a href="" class="h5 d-flex align-items-center bg-white px-3 mb-0">Best way to prepare a room for painting
+                                </a>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img class="img-fluid" src="{% static 'website/img/blog-2.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                                <a href="" class="h5 d-flex align-items-center bg-white px-3 mb-0">How to paint faster!
+                                </a>
+                            </div>
+                            <div class="d-flex">
+                                <img class="img-fluid" src="{% static 'website/img/blog-3.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                                <a href="" class="h5 d-flex align-items-center bg-white px-3 mb-0">Have you ever thought about starting a painting business?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recent Post End -->
+    
+                    <!-- Image Start -->
+                    <div class="mb-5">
+                        <img src="{% static 'website/img/blog-1.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <!-- Image End -->
+    
+                    <!-- Tags Start -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">Tag Cloud</h3>
+                        <div class="d-flex flex-wrap m-n1">
+                            <a href="" class="btn btn-outline-secondary rounded-pill px-3 m-1">Paint</a>
+                            <a href="" class="btn btn-outline-secondary rounded-pill px-3 m-1">Small Business</a>
+                            <a href="" class="btn btn-outline-secondary rounded-pill px-3 m-1">Marketing</a>
+                            <a href="" class="btn btn-outline-secondary rounded-pill px-3 m-1">Professional Service</a>
+                            <a href="" class="btn btn-outline-secondary rounded-pill px-3 m-1">Interior</a>
+                            <a href="" class="btn btn-outline-secondary rounded-pill px-3 m-1">Exterior</a>
+                            <a href="" class="btn btn-outline-secondary rounded-pill px-3 m-1">Prep work</a>
+                            <a href="" class="btn btn-outline-secondary rounded-pill px-3 m-1">Pressure Washing</a>
+
+                        </div>
+                    </div>
+                    <!-- Tags End -->
+    
+                    <!-- Plain Text Start -->
+                    <div>
+                        <h3 class="mb-4">Read lastest info!</h3>
+                        <div class="bg-primary text-center" style="padding: 30px;">
+                            <p>Check out the latest houses that Performance painting has painted! </p>
+                            <a href="" class="btn btn-secondary rounded-pill py-2 px-4">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Plain Text End -->
+                </div>
+                <!-- Sidebar End -->
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    
+
+{% endblock %}
